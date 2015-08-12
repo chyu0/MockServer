@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wxusers>
+	<wxuser>
+		<host>192.168.101.6</host>
+		<wxconfigs>
+			<wxconfig>
+				<appid>wxac2386f873f97f70</appid>
+				<openid>1231243435</openid>
+			</wxconfig>
+			<wxconfig>
+				<appid>wx7ea5ea5080ce5c1f</appid>
+				<openid>13435465</openid>
+			</wxconfig>
+		</wxconfigs>
+	</wxuser>
+	<wxuser>
+		<host>172.16.25.172</host>
+		<wxconfigs>
+			<wxconfig>
+				<appid>wxac2386f873f97f70</appid>
+				<openid>oVDyijr2ePsX_QIWcszp6wUmVWj4</openid>
+			</wxconfig>
+			<wxconfig>
+				<appid>wx7ea5ea5080ce5c1f</appid>
+				<openid>oHqfrw9z6QxdCyg73P7fIap1uCl8</openid>
+			</wxconfig>
+		</wxconfigs>
+	</wxuser>
+</wxusers>
