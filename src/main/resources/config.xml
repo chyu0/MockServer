@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <wxusers>
 	<wxuser>
 		<host>192.168.101.6</host>
@@ -18,7 +17,7 @@
 		<wxconfigs>
 			<wxconfig>
 				<appid>wxac2386f873f97f70</appid>
-				<openid>oVDyijr2ePsX_QIWcszp6wUmVWj4</openid>
+				<openid>oVDyijr2ePsX_QIWcszp6wUmVWj</openid>
 			</wxconfig>
 			<wxconfig>
 				<appid>wx7ea5ea5080ce5c1f</appid>
@@ -36,6 +35,20 @@
 			<wxconfig>
 				<appid>wx7ea5ea5080ce5c1f</appid>
 				<openid>oHqfrw9z6QxdCyg73P7fIap1uCl8</openid>
+			</wxconfig>
+		</wxconfigs>
+	</wxuser>
+	
+	<wxuser>
+		<host>127.0.0.1</host>
+		<wxconfigs>
+			<wxconfig>
+				<appid>wxac2386f873f97f70</appid>
+				<openid>oIrGUuFaWnkx4_GnumaKfXoYjh44</openid>
+			</wxconfig>
+			<wxconfig>
+				<appid>wx7ea5ea5080ce5c1f</appid>
+				<openid>oIrGUuFaWnkx4_GnumaKfXoYjh44</openid>
 			</wxconfig>
 		</wxconfigs>
 	</wxuser>
