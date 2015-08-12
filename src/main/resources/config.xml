@@ -26,4 +26,17 @@
 			</wxconfig>
 		</wxconfigs>
 	</wxuser>
+	<wxuser>
+		<host>172.16.24.86</host>
+		<wxconfigs>
+			<wxconfig>
+				<appid>wxac2386f873f97f70</appid>
+				<openid>oVDyijr2ePsX_QIWcszp6wUmVWj4</openid>
+			</wxconfig>
+			<wxconfig>
+				<appid>wx7ea5ea5080ce5c1f</appid>
+				<openid>oHqfrw9z6QxdCyg73P7fIap1uCl8</openid>
+			</wxconfig>
+		</wxconfigs>
+	</wxuser>
 </wxusers>

@@ -5,7 +5,9 @@
 	<artifactId>WxMockServer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-
+	<build>
+		<finalName>MockServer</finalName>
+	</build>
 	<dependencies>
 		<dependency>
 			<groupId>com.jfinal</groupId>
