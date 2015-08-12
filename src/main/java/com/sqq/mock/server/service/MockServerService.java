@@ -34,7 +34,7 @@ public class MockServerService {
 		List<Element> wxuserList = wxusers.elements();
 		for (Element element : wxuserList) {
 			String host = element.element("host").getText().trim();
-			if (!StringUtils.isNotBlank(host)) {
+			if (StringUtils.isBlank(host)) {
 				continue;
 			}
 			Element wxconfigs = element.element("wxconfigs");
@@ -56,11 +56,7 @@ public class MockServerService {
 		return map;
 	}
 	
-	/*
-	 * 解析config.xml文件，将返回的map赋值给静态变量usermap，
-	 * 便于可以直接从内存中读xml文件的数据，而不需要重新解析
-	 * 而time记录的是文件最后修改时间，只要没有解析xml文件time的值就不会改变
-	 */
+
 	public static void analyXml(){
 		String path = MockServerService.class.getResource("/").getPath().toString();
 		if(path.startsWith("file:/")){
