@@ -1,19 +1,6 @@
 <wxusers>
 	<wxuser>
-		<host>192.168.101.6</host>
-		<wxconfigs>
-			<wxconfig>
-				<appid>wxac2386f873f97f70</appid>
-				<openid>1231243435</openid>
-			</wxconfig>
-			<wxconfig>
-				<appid>wx7ea5ea5080ce5c1f</appid>
-				<openid>13435465</openid>
-			</wxconfig>
-		</wxconfigs>
-	</wxuser>
-	<wxuser>
-		<host>172.16.25.172</host>
+		<host>172.16.25.52</host>
 		<wxconfigs>
 			<wxconfig>
 				<appid>wxac2386f873f97f70</appid>
@@ -26,7 +13,7 @@
 		</wxconfigs>
 	</wxuser>
 	<wxuser>
-		<host>172.16.24.86</host>
+		<host>172.16.24.172</host>
 		<wxconfigs>
 			<wxconfig>
 				<appid>wxac2386f873f97f70</appid>

@@ -16,7 +16,7 @@ import org.dom4j.io.SAXReader;
 
 public class MockServerService {
 	
-	public static Logger log=null;
+	public static final Logger log=Logger.getLogger(MockServerService.class);
 	public static Map<String, Map<String, String>> usermap = new ConcurrentHashMap<String, Map<String, String>>();
 	private static long time=0L;
 	/*
@@ -62,17 +62,19 @@ public class MockServerService {
 	 * 而time记录的是文件最后修改时间，只要没有解析xml文件time的值就不会改变
 	 */
 	public static void analyXml(){
-		String path = MockServerService.class.getResource("/").getPath().toString()+"config.xml";
+		String path = MockServerService.class.getResource("/").getPath().toString();
 		if(path.startsWith("file:/")){
 			path=path.substring(6);
 		}
-		File config=new File(path);
+		File config=new File(path+"config.xml");
 		if(config.lastModified()>time){
 			SAXReader reader=new SAXReader();
+			log.info("xml文件被改变，已重新读取");
 			try {
 				Document document=reader.read(config);
 				usermap=getConfigMap(document);
 			} catch (DocumentException e) {
+				log.error("读取xml文件出错了,程序终止"+e.getMessage());
 				e.printStackTrace();
 			}
 		}

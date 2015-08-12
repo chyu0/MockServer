@@ -4,6 +4,8 @@ import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import org.apache.log4j.Logger;
+
 import com.jfinal.config.Constants;
 import com.jfinal.config.Handlers;
 import com.jfinal.config.Interceptors;
@@ -47,12 +49,13 @@ public class MockServerConfig extends JFinalConfig {
 	@Override
 	public void afterJFinalStart() {
 		Timer timer = new Timer();
+		final Logger log=Logger.getLogger(MockServerConfig.class.getName());
 		timer.scheduleAtFixedRate(new TimerTask() {
 
 			@Override
 			public void run() {
 				MockServerService.analyXml();
-				System.out.println("调度analyXml");
+				log.info("调度analyXml");
 			}
 
 		}, new Date(), 20 * 1000);
