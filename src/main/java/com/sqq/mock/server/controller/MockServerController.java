@@ -13,9 +13,12 @@ public class MockServerController extends Controller {
 	
 	public void access_token() {
 		String ip = MockServerUtil.getUserIp(this.getRequest());
+		if(StringUtils.isBlank(ip)){
+			ip="127.0.0.1";
+		}
 		Map<String, String> wxconfigMap = MockServerService.usermap.get(ip);
 		String appId=getPara("appid");
-		if(wxconfigMap==null||!StringUtils.isNotBlank(appId)){
+		if(wxconfigMap==null||StringUtils.isBlank(appId)){
 			return ;
 		}
 		String openId= wxconfigMap.get(appId);	
