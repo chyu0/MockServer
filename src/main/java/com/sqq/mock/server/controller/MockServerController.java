@@ -11,26 +11,22 @@ import com.sqq.mock.server.service.MockServerService;
 import com.sqq.mock.server.util.MockServerUtil;
 
 public class MockServerController extends Controller {
-	public static final Logger log=Logger.getLogger(MockServerController.class);
+
+	public static final Logger log = Logger.getLogger(MockServerController.class);
+
 	public void access_token() {
 		String ip = MockServerUtil.getUserIp(this.getRequest());
-		if(StringUtils.isBlank(ip)){
-			ip="127.0.0.1";
-		}
-		
 		Map<String, String> wxconfigMap = MockServerService.usermap.get(ip);
-		String appId=getPara("appid");
-		if(wxconfigMap==null){
-			wxconfigMap=MockServerService.usermap.get("127.0.0.1");
-		}
-		if(wxconfigMap==null||StringUtils.isBlank(appId)){
-			return ;
-		}
-		String openId= wxconfigMap.get(appId);
-		
-		log.info("====openId===="+openId);
+		String appId = getPara("appid");
+
 		Record result = new Record();
-		result.set("openid", openId!=null?openId:"");
+		if (wxconfigMap == null || StringUtils.isBlank(appId)) {
+			renderJson(result);
+			return;
+		}
+
+		String openId = wxconfigMap.get(appId);
+		result.set("openid", openId != null ? openId : "");
 		renderJson(result);
 	}
 

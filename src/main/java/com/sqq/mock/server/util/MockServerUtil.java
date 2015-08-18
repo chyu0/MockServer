@@ -10,7 +10,7 @@ public class MockServerUtil {
 	 * 获取用户ip地址
 	 */
 	public static String getUserIp(HttpServletRequest request) {
-		String ip = null;
+		String ip = "127.0.0.1";
 		ip = request.getHeader("x-forwarded-for");
 		if (ip == null || ip.equals("") || "unknow".equalsIgnoreCase(ip)) {
 			ip = request.getHeader("Proxy-Client-IP");
