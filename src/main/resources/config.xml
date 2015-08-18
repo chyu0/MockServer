@@ -13,19 +13,19 @@
 		</wxconfigs>
 	</wxuser>
 	<wxuser>
-		<host>172.16.24.172</host>
+		<host>172.16.25.172</host>
 		<wxconfigs>
 			<wxconfig>
 				<appid>wxac2386f873f97f70</appid>
-				<openid>oVDyijr2ePsX_QIWcszp6wUmVWj4</openid>
+				<openid>oVDyijr2ePsX_QIWcszp6wUmVWj4j</openid>
 			</wxconfig>
 			<wxconfig>
 				<appid>wx7ea5ea5080ce5c1f</appid>
-				<openid>oHqfrw9z6QxdCyg73P7fIap1uCl8</openid>
+				<openid> oHqfrw9z6QxdCyg73P7fIap1uCl8</openid>
 			</wxconfig>
 		</wxconfigs>
 	</wxuser>
-	
+
 	<wxuser>
 		<host>127.0.0.1</host>
 		<wxconfigs>
@@ -36,6 +36,20 @@
 			<wxconfig>
 				<appid>wx7ea5ea5080ce5c1f</appid>
 				<openid>oIrGUuFaWnkx4_GnumaKfXoYjh44</openid>
+			</wxconfig>
+		</wxconfigs>
+	</wxuser>
+
+	<wxuser>
+		<host>172.16.24.90</host>
+		<wxconfigs>
+			<wxconfig>
+				<appid>wxac2386f873f97f70</appid>
+				<openid>oVDyijtHsEK3P8Nv3beWTr586gDQ</openid>
+			</wxconfig>
+			<wxconfig>
+				<appid>wx7ea5ea5080ce5c1f</appid>
+				<openid>oHqfrw6dB2-Jc0lSeZKCxHX4uWtI</openid>
 			</wxconfig>
 		</wxconfigs>
 	</wxuser>

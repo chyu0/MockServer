@@ -13,7 +13,6 @@ import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
-
 public class MockServerService {
 	
 	public static final Logger log=Logger.getLogger(MockServerService.class);
