@@ -3,6 +3,7 @@ package com.sqq.mock.server.controller;
 import java.util.Map;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.log4j.Logger;
 
 import com.jfinal.core.Controller;
 import com.jfinal.plugin.activerecord.Record;
@@ -10,12 +11,13 @@ import com.sqq.mock.server.service.MockServerService;
 import com.sqq.mock.server.util.MockServerUtil;
 
 public class MockServerController extends Controller {
-	
+	public static final Logger log=Logger.getLogger(MockServerController.class);
 	public void access_token() {
 		String ip = MockServerUtil.getUserIp(this.getRequest());
 		if(StringUtils.isBlank(ip)){
 			ip="127.0.0.1";
 		}
+		
 		Map<String, String> wxconfigMap = MockServerService.usermap.get(ip);
 		String appId=getPara("appid");
 		if(wxconfigMap==null){
@@ -25,6 +27,8 @@ public class MockServerController extends Controller {
 			return ;
 		}
 		String openId= wxconfigMap.get(appId);
+		
+		log.info("====openId===="+openId);
 		Record result = new Record();
 		result.set("openid", openId!=null?openId:"");
 		renderJson(result);

@@ -55,7 +55,6 @@ public class MockServerConfig extends JFinalConfig {
 			@Override
 			public void run() {
 				MockServerService.analyXml();
-				log.info("调度analyXml");
 			}
 
 		}, new Date(), 20 * 1000);

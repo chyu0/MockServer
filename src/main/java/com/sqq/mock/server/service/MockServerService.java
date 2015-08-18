@@ -63,13 +63,13 @@ public class MockServerService {
 		}
 		File config=new File(path+"config.xml");
 		if(config.lastModified()>time){
+			log.info("config.xml was changed");
 			SAXReader reader=new SAXReader();
-			log.info("xml文件被改变，已重新读取");
 			try {
 				Document document=reader.read(config);
 				usermap=getConfigMap(document);
 			} catch (DocumentException e) {
-				log.error("读取xml文件出错了,程序终止"+e.getMessage());
+				log.error("read config.xml error!!!!!");
 				e.printStackTrace();
 			}
 		}
