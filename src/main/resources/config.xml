@@ -3,52 +3,82 @@
 		<host>127.0.0.1</host>
 		<wxconfigs>
 			<wxconfig>
+				<descname>万江龙网络2</descname>
 				<appid>wxac2386f873f97f70</appid>
 				<openid>oIrGUuFaWnkx4_GnumaKfXoYjh44</openid>
 			</wxconfig>
 			<wxconfig>
+				<descname>万江龙测试账号</descname>
 				<appid>wx7ea5ea5080ce5c1f</appid>
 				<openid>oIrGUuFaWnkx4_GnumaKfXoYjh44</openid>
 			</wxconfig>
 		</wxconfigs>
 	</wxuser>
+	
 	<wxuser>
-		<host>172.16.25.52</host>
+		<username>罗正加</username>
+		<host>172.16.4.13</host>
 		<wxconfigs>
 			<wxconfig>
+				<descname>万江龙网络2</descname>
 				<appid>wxac2386f873f97f70</appid>
-				<openid>oVDyijr2ePsX_QIWcszp6wUmVWj</openid>
+				<openid>oVDyijr2ePsX_QIWcszp6wUmVWj4</openid>
 			</wxconfig>
 			<wxconfig>
+				<descname>万江龙测试账号</descname>
 				<appid>wx7ea5ea5080ce5c1f</appid>
 				<openid>oHqfrw9z6QxdCyg73P7fIap1uCl8</openid>
 			</wxconfig>
 		</wxconfigs>
 	</wxuser>
 	<wxuser>
-		<host>172.16.25.172</host>
+		<username>陈彬彬</username>
+		<host>172.16.4.3</host>
 		<wxconfigs>
 			<wxconfig>
+				<descname>万江龙网络2</descname>
 				<appid>wxac2386f873f97f70</appid>
-				<openid>oVDyijr2ePsX_QIWcszp6wUmVWj4j</openid>
+				<openid>oVDyijrcxgGh_Pw2Jdc2NdWPiOM0</openid>
 			</wxconfig>
 			<wxconfig>
+				<descname>万江龙测试账号</descname>
 				<appid>wx7ea5ea5080ce5c1f</appid>
-				<openid> oHqfrw9z6QxdCyg73P7fIap1uCl8</openid>
+				<openid>oHqfrwz6SOwiFPSkmmkwYNgey-T4</openid>
 			</wxconfig>
 		</wxconfigs>
 	</wxuser>
-	<wxuser>
+		<wxuser>
+		<username>章程</username>
 		<host>172.16.24.90</host>
 		<wxconfigs>
 			<wxconfig>
+				<descname>万江龙网络2</descname>
 				<appid>wxac2386f873f97f70</appid>
 				<openid>oVDyijtHsEK3P8Nv3beWTr586gDQ</openid>
 			</wxconfig>
 			<wxconfig>
+				<descname>万江龙测试账号</descname>
 				<appid>wx7ea5ea5080ce5c1f</appid>
 				<openid>oHqfrw6dB2-Jc0lSeZKCxHX4uWtI</openid>
 			</wxconfig>
 		</wxconfigs>
 	</wxuser>
+	
+	<wxuser>
+		<username>陈煜</username>
+		<host>172.16.25.172</host>
+		<wxconfigs>
+			<wxconfig>
+				<descname>万江龙网络2</descname>
+				<appid>wxac2386f873f97f70</appid>
+				<openid>oVDyijr2ePsX_QIWcszp6wUmVWj4j</openid>
+			</wxconfig>
+			<wxconfig>
+				<descname>万江龙测试账号</descname>
+				<appid>wx7ea5ea5080ce5c1f</appid>
+				<openid> oHqfrw9z6QxdCyg73P7fIap1uCl8</openid>
+			</wxconfig>
+		</wxconfigs>
+	</wxuser>
+
 </wxusers>
