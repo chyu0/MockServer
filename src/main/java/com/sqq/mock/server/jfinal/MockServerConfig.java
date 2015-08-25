@@ -49,9 +49,7 @@ public class MockServerConfig extends JFinalConfig {
 	@Override
 	public void afterJFinalStart() {
 		Timer timer = new Timer();
-		final Logger log=Logger.getLogger(MockServerConfig.class.getName());
 		timer.scheduleAtFixedRate(new TimerTask() {
-
 			@Override
 			public void run() {
 				MockServerService.analyXml();

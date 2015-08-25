@@ -16,18 +16,15 @@ public class MockServerController extends Controller {
 
 	public void access_token() {
 
-		System.out.println("1");
 		String ip = MockServerUtil.getUserIp(this.getRequest());
 		Map<String, String> wxconfigMap = MockServerService.usermap.get(ip);
 		String appId = getPara("appid");
-		System.out.println("2");
 		Record result = new Record();
 		if (wxconfigMap == null || StringUtils.isBlank(appId)) {
 			renderJson(result);
 			return;
 		}
 
-		System.out.println("3");
 		String openId = wxconfigMap.get(appId);
 		result.set("openid", openId != null ? openId : "");
 		renderJson(result);

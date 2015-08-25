@@ -14,20 +14,21 @@ import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
 public class MockServerService {
-	
-	public static final Logger log=Logger.getLogger(MockServerService.class);
+
+	public static final Logger log = Logger.getLogger(MockServerService.class);
 	public static Map<String, Map<String, String>> usermap = new ConcurrentHashMap<String, Map<String, String>>();
-	private static long time=0L;
+	private static long time = 0L;
+
 	/*
 	 * 通过document来解析xml文件，并将结果以map形式表示出来
 	 */
 	private static Map<String, Map<String, String>> getConfigMap(Document document) throws DocumentException {
 		Map<String, Map<String, String>> map = new HashMap<String, Map<String, String>>();
-		if(document==null) {
-			return map;	
+		if (document == null) {
+			return map;
 		}
-		Element wxusers=document.getRootElement();
-		if (wxusers == null){
+		Element wxusers = document.getRootElement();
+		if (wxusers == null) {
 			return map;
 		}
 		List<Element> wxuserList = wxusers.elements();
@@ -46,7 +47,7 @@ public class MockServerService {
 			for (Element wxconfig : allConfig) {
 				String appid = wxconfig.element("appid").getText().trim();
 				String openid = wxconfig.element("openid").getText().trim();
-				if(StringUtils.isNotBlank(appid)&&StringUtils.isNotBlank(openid)){
+				if (StringUtils.isNotBlank(appid) && StringUtils.isNotBlank(openid)) {
 					configmap.put(appid, openid);
 				}
 			}
@@ -54,27 +55,24 @@ public class MockServerService {
 		}
 		return map;
 	}
-	
 
-	public static void analyXml(){
+	public static void analyXml() {
 		String path = MockServerService.class.getResource("/").getPath().toString();
-		if(path.startsWith("file:/")){
-			path=path.substring(6);
+		if (path.startsWith("file:/")) {
+			path = path.substring(6);
 		}
-		File config=new File(path+"config.xml");
-		if(config.lastModified()>time){
+		File config = new File(path + "config.xml");
+		if (config.lastModified() > time) {
 			log.info("config.xml was changed");
-			SAXReader reader=new SAXReader();
+			SAXReader reader = new SAXReader();
 			try {
-				Document document=reader.read(config);
-				usermap=getConfigMap(document);
+				Document document = reader.read(config);
+				usermap = getConfigMap(document);
 			} catch (DocumentException e) {
 				log.error("read config.xml error!!!!!");
-				e.printStackTrace();
 			}
 		}
-		time=config.lastModified();
+		time = config.lastModified();
 	}
-
 
 }
