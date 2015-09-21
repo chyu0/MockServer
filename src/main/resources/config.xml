@@ -48,13 +48,13 @@
 		</wxconfigs>
 	</wxuser>
 		<wxuser>
-		<username>章程</username>
-		<host>172.16.24.90</host>
+		<username>胡鹏</username>
+		<host>172.16.26.30</host>
 		<wxconfigs>
 			<wxconfig>
 				<descname>万江龙网络2</descname>
 				<appid>wxac2386f873f97f70</appid>
-				<openid>oVDyijtHsEK3P8Nv3beWTr586gDQ</openid>
+				<openid>oVDyijhRFUY9H_itAaGcWo7LEsSs</openid>
 			</wxconfig>
 			<wxconfig>
 				<descname>万江龙测试账号</descname>
