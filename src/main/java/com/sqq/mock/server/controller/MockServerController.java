@@ -32,9 +32,9 @@ public class MockServerController extends Controller {
 
 	public void authorize() {
 		if (getPara("redirect_uri").contains("?")) {
-			redirect(getPara("redirect_uri") + "&code=abcdefg&state=wx");
+			redirect(getPara("redirect_uri") + "&code=abcdefg|state=wx");
 		} else {
-			redirect(getPara("redirect_uri") + "?code=abcdefg&state=wx");
+			redirect(getPara("redirect_uri") + "?code=abcdefg|state=wx");
 		}
 	}
 }
