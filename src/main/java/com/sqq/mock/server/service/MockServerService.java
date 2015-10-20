@@ -33,7 +33,7 @@ public class MockServerService {
 		}
 		List<Element> wxuserList = wxusers.elements();
 		for (Element element : wxuserList) {
-			String hosts = element.element("host").getText().trim();
+			String hosts = element.element("host").getText();
 			if (StringUtils.isBlank(hosts)) {
 				continue;
 			}
@@ -42,7 +42,7 @@ public class MockServerService {
 			Map<String, String> configmap = new HashMap<String, String>();
 			String[] allHost=hosts.split(",");
 			for(String host:allHost){
-				map.put(host, configmap);
+				map.put(host.trim(), configmap);
 			}
 			
 			Element wxconfigs = element.element("wxconfigs");
