@@ -33,14 +33,17 @@ public class MockServerService {
 		}
 		List<Element> wxuserList = wxusers.elements();
 		for (Element element : wxuserList) {
-			String host = element.element("host").getText().trim();
-			if (StringUtils.isBlank(host)) {
+			String hosts = element.element("host").getText().trim();
+			if (StringUtils.isBlank(hosts)) {
 				continue;
 			}
 			Element wxconfigs = element.element("wxconfigs");
 			Map<String, String> configmap = new HashMap<String, String>();
 			if (wxconfigs == null) {
-				map.put(host, configmap);
+				String[] allHost=hosts.split(",");
+				for(String host:allHost){
+					map.put(host, configmap);
+				}
 				continue;
 			}
 			List<Element> allConfig = wxconfigs.elements("wxconfig");
@@ -51,7 +54,10 @@ public class MockServerService {
 					configmap.put(appid, openid);
 				}
 			}
-			map.put(host, configmap);
+			String[] allHost=hosts.split(",");
+			for(String host:allHost){
+				map.put(host, configmap);
+			}
 		}
 		return map;
 	}

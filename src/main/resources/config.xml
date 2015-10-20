@@ -66,7 +66,7 @@
 	
 	<wxuser>
 		<username>陈煜</username>
-		<host>172.16.25.172</host>
+		<host>172.16.3.8</host>
 		<wxconfigs>
 			<wxconfig>
 				<descname>万江龙网络2</descname>
@@ -76,7 +76,7 @@
 			<wxconfig>
 				<descname>万江龙测试账号</descname>
 				<appid>wx7ea5ea5080ce5c1f</appid>
-				<openid> oHqfrw9z6QxdCyg73P7fIap1uCl8</openid>
+				<openid>oHqfrw9z6QxdCyg73P7fIap1uCl8</openid>
 			</wxconfig>
 		</wxconfigs>
 	</wxuser>
