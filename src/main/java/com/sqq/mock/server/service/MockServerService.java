@@ -37,15 +37,20 @@ public class MockServerService {
 			if (StringUtils.isBlank(hosts)) {
 				continue;
 			}
-			Element wxconfigs = element.element("wxconfigs");
+			
+			// 支持一个用户多个IP地址
 			Map<String, String> configmap = new HashMap<String, String>();
+			String[] allHost=hosts.split(",");
+			for(String host:allHost){
+				map.put(host, configmap);
+			}
+			
+			Element wxconfigs = element.element("wxconfigs");
 			if (wxconfigs == null) {
-				String[] allHost=hosts.split(",");
-				for(String host:allHost){
-					map.put(host, configmap);
-				}
 				continue;
 			}
+			
+			// 封装appid和openId
 			List<Element> allConfig = wxconfigs.elements("wxconfig");
 			for (Element wxconfig : allConfig) {
 				String appid = wxconfig.element("appid").getText().trim();
@@ -53,10 +58,6 @@ public class MockServerService {
 				if (StringUtils.isNotBlank(appid) && StringUtils.isNotBlank(openid)) {
 					configmap.put(appid, openid);
 				}
-			}
-			String[] allHost=hosts.split(",");
-			for(String host:allHost){
-				map.put(host, configmap);
 			}
 		}
 		return map;
