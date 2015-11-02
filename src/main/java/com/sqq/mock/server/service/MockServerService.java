@@ -22,8 +22,8 @@ public class MockServerService {
 	/*
 	 * 通过document来解析xml文件，并将结果以map形式表示出来
 	 */
-	private static Map<String, Map<String, String>> getConfigMap(Document document) throws DocumentException {
-		Map<String, Map<String, String>> map = new HashMap<String, Map<String, String>>();
+	private static Map<String, WxDeveloper> getConfigMap(Document document) throws DocumentException {
+		Map<String, WxDeveloper> map = new HashMap<String, WxDeveloper>();
 		if (document == null) {
 			return map;
 		}
@@ -33,16 +33,36 @@ public class MockServerService {
 		}
 		List<Element> wxuserList = wxusers.elements();
 		for (Element element : wxuserList) {
+			//<ip,<appid,openid>>
+			Map<String, Map<String,String>> wxConfigMap=new HashMap<String,Map<String,String>>();
+			WxDeveloper developer=new WxDeveloper();
+			
+			String username=element.element("username").getText();
+			developer.setUserName(username);
 			String hosts = element.element("host").getText();
 			if (StringUtils.isBlank(hosts)) {
 				continue;
 			}
 			
-			// 支持一个用户多个IP地址
-			Map<String, String> configmap = new HashMap<String, String>();
+			// 支持一个用户多个IP地址<appid,openid>
+			Map<String, String> openidConfig = new HashMap<String, String>();
+			//用户映射<ip,userinfo>
+			Map<String,String> userinfoMap=new HashMap<String,String>();
+			
+			//userinfo字符串
+			Element userinfo=element.element("userinfo");
+			userinfoMap.put("nickname", userinfo.elementText("nickname").trim());
+			userinfoMap.put("sex",userinfo.elementText("sex").trim());
+			userinfoMap.put("province",userinfo.elementText("province").trim());
+			userinfoMap.put("city",userinfo.elementText("city").trim());
+			userinfoMap.put("country",userinfo.elementText("country").trim());
+			userinfoMap.put("headimgurl", userinfo.elementText("headimgurl").trim());
+			developer.setUserInfo(userinfoMap);			
+			
 			String[] allHost=hosts.split(",");
 			for(String host:allHost){
-				map.put(host.trim(), configmap);
+				wxConfigMap.put(host.trim(), openidConfig);
+				map.put(host, developer);
 			}
 			
 			Element wxconfigs = element.element("wxconfigs");
@@ -56,13 +76,14 @@ public class MockServerService {
 				String appid = wxconfig.element("appid").getText().trim();
 				String openid = wxconfig.element("openid").getText().trim();
 				if (StringUtils.isNotBlank(appid) && StringUtils.isNotBlank(openid)) {
-					configmap.put(appid, openid);
+					openidConfig.put(appid, openid);
 				}
 			}
+			developer.setWxConfigMap(wxConfigMap);
 		}
 		return map;
 	}
-
+	
 	public static void analyXml() {
 		String path = MockServerService.class.getResource("/").getPath().toString();
 		if (path.startsWith("file:/")) {

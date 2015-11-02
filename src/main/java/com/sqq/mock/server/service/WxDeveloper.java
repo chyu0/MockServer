@@ -7,8 +7,6 @@ public class WxDeveloper {
 
 	private String userName;
 
-	private List<String> hostList;
-
 	private Map<String, Map<String, String>> wxConfigMap;
 
 	private Map<String, String> userInfo;
@@ -19,14 +17,6 @@ public class WxDeveloper {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
-	}
-
-	public List<String> getHostList() {
-		return hostList;
-	}
-
-	public void setHostList(List<String> hostList) {
-		this.hostList = hostList;
 	}
 
 	public Map<String, Map<String, String>> getWxConfigMap() {

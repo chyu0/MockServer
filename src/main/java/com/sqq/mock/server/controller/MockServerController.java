@@ -21,7 +21,7 @@ public class MockServerController extends Controller {
 		WxDeveloper wxDeveloper = MockServerService.usermap.get(ip);
 		String appId = getPara("appid");
 		
-		Map<String, String> wxconfigMap =wxDeveloper.getWxConfigMap().get(appId);
+		Map<String, String> wxconfigMap =wxDeveloper.getWxConfigMap().get(ip);
 		Record result = new Record();
 		if (wxconfigMap == null || StringUtils.isBlank(appId)) {
 			renderJson(result);
@@ -30,6 +30,7 @@ public class MockServerController extends Controller {
 
 		String openId = wxconfigMap.get(appId);
 		result.set("openid", openId != null ? openId : "");
+		result.set("access_token", "efefs");
 		renderJson(result);
 	}
 
@@ -42,8 +43,14 @@ public class MockServerController extends Controller {
 	}
 	
 	public void userInfo(){
-		Record result = new Record();
-		result.set("openid", null);
-		renderJson(result);
+		String ip = MockServerUtil.getUserIp(this.getRequest());
+		WxDeveloper developer=MockServerService.usermap.get(ip);
+		
+		if(developer==null){
+			renderJson("");
+			return ;
+		}
+		Map<String,String> userinfoMap=developer.getUserInfo();
+		renderJson(userinfoMap);
 	}
 }
