@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import com.jfinal.core.Controller;
 import com.jfinal.plugin.activerecord.Record;
 import com.sqq.mock.server.service.MockServerService;
+import com.sqq.mock.server.service.WxDeveloper;
 import com.sqq.mock.server.util.MockServerUtil;
 
 public class MockServerController extends Controller {
@@ -17,8 +18,10 @@ public class MockServerController extends Controller {
 	public void access_token() {
 
 		String ip = MockServerUtil.getUserIp(this.getRequest());
-		Map<String, String> wxconfigMap = MockServerService.usermap.get(ip);
+		WxDeveloper wxDeveloper = MockServerService.usermap.get(ip);
 		String appId = getPara("appid");
+		
+		Map<String, String> wxconfigMap =wxDeveloper.getWxConfigMap().get(appId);
 		Record result = new Record();
 		if (wxconfigMap == null || StringUtils.isBlank(appId)) {
 			renderJson(result);
@@ -36,5 +39,11 @@ public class MockServerController extends Controller {
 		} else {
 			redirect(getPara("redirect_uri") + "?code=abcdefg|state=wx");
 		}
+	}
+	
+	public void userInfo(){
+		Record result = new Record();
+		result.set("openid", null);
+		renderJson(result);
 	}
 }

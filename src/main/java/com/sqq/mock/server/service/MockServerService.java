@@ -16,7 +16,7 @@ import org.dom4j.io.SAXReader;
 public class MockServerService {
 
 	public static final Logger log = Logger.getLogger(MockServerService.class);
-	public static Map<String, Map<String, String>> usermap = new ConcurrentHashMap<String, Map<String, String>>();
+	public static Map<String, WxDeveloper> usermap = new ConcurrentHashMap<String,WxDeveloper>();
 	private static long time = 0L;
 
 	/*
