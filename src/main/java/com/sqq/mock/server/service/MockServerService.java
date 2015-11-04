@@ -16,7 +16,7 @@ import org.dom4j.io.SAXReader;
 public class MockServerService {
 
 	public static final Logger log = Logger.getLogger(MockServerService.class);
-	public static Map<String, WxDeveloper> usermap = new ConcurrentHashMap<String,WxDeveloper>();
+	public static Map<String, WxDeveloper> usermap = new ConcurrentHashMap<String, WxDeveloper>();
 	private static long time = 0L;
 
 	/*
@@ -33,43 +33,43 @@ public class MockServerService {
 		}
 		List<Element> wxuserList = wxusers.elements();
 		for (Element element : wxuserList) {
-			//<ip,<appid,openid>>
-			Map<String, Map<String,String>> wxConfigMap=new HashMap<String,Map<String,String>>();
-			WxDeveloper developer=new WxDeveloper();
-			
-			String username=element.element("username").getText();
+			// <ip,<appid,openid>>
+			Map<String, Map<String, String>> wxConfigMap = new HashMap<String, Map<String, String>>();
+			WxDeveloper developer = new WxDeveloper();
+
+			String username = element.element("username").getText();
 			developer.setUserName(username);
 			String hosts = element.element("host").getText();
 			if (StringUtils.isBlank(hosts)) {
 				continue;
 			}
-			
+
 			// 支持一个用户多个IP地址<appid,openid>
 			Map<String, String> openidConfig = new HashMap<String, String>();
-			//用户映射<ip,userinfo>
-			Map<String,String> userinfoMap=new HashMap<String,String>();
-			
-			//userinfo字符串
-			Element userinfo=element.element("userinfo");
+			// 用户映射
+			Map<String, String> userinfoMap = new HashMap<String, String>();
+
+			// userinfo字符串
+			Element userinfo = element.element("userinfo");
 			userinfoMap.put("nickname", userinfo.elementText("nickname").trim());
-			userinfoMap.put("sex",userinfo.elementText("sex").trim());
-			userinfoMap.put("province",userinfo.elementText("province").trim());
-			userinfoMap.put("city",userinfo.elementText("city").trim());
-			userinfoMap.put("country",userinfo.elementText("country").trim());
+			userinfoMap.put("sex", userinfo.elementText("sex").trim());
+			userinfoMap.put("province", userinfo.elementText("province").trim());
+			userinfoMap.put("city", userinfo.elementText("city").trim());
+			userinfoMap.put("country", userinfo.elementText("country").trim());
 			userinfoMap.put("headimgurl", userinfo.elementText("headimgurl").trim());
-			developer.setUserInfo(userinfoMap);			
-			
-			String[] allHost=hosts.split(",");
-			for(String host:allHost){
+			developer.setUserInfo(userinfoMap);
+
+			String[] allHost = hosts.split(",");
+			for (String host : allHost) {
 				wxConfigMap.put(host.trim(), openidConfig);
 				map.put(host, developer);
 			}
-			
+
 			Element wxconfigs = element.element("wxconfigs");
 			if (wxconfigs == null) {
 				continue;
 			}
-			
+
 			// 封装appid和openId
 			List<Element> allConfig = wxconfigs.elements("wxconfig");
 			for (Element wxconfig : allConfig) {
@@ -83,7 +83,7 @@ public class MockServerService {
 		}
 		return map;
 	}
-	
+
 	public static void analyXml() {
 		String path = MockServerService.class.getResource("/").getPath().toString();
 		if (path.startsWith("file:/")) {

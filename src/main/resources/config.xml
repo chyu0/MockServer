@@ -23,7 +23,7 @@
 			<headimgurl></headimgurl>
 		</userinfo>
 	</wxuser>
-	
+
 	<wxuser>
 		<username>罗正加</username>
 		<host>172.16.24.86,172.16.4.8</host>
@@ -50,7 +50,8 @@
 			<province>湖北</province>
 			<city>武汉</city>
 			<country>中国</country>
-			<headimgurl>http://wx.qlogo.cn/mmopen/Q3auHgzwzM5WWsZGtk7nztusAgj1VUz4VhXpicsibuJLHpAcjAADcKgzmFmCjChGHT6csFOmuukMKTHuQgDqRCXg/0</headimgurl>
+			<headimgurl>http://wx.qlogo.cn/mmopen/Q3auHgzwzM5WWsZGtk7nztusAgj1VUz4VhXpicsibuJLHpAcjAADcKgzmFmCjChGHT6csFOmuukMKTHuQgDqRCXg/0
+			</headimgurl>
 		</userinfo>
 	</wxuser>
 	<wxuser>
@@ -74,12 +75,13 @@
 			<province>湖北</province>
 			<city>武汉</city>
 			<country>中国</country>
-			<headimgurl>http://wx.qlogo.cn/mmopen/AHe4aAgSdeY9kvYwU1YMYD52V8iaXwkqKZaKcwnxRZjXgkVkKHJ6Uic07DA1bHnDN5NlBibgbN3VYDgXE8H0uyMpIfozS5ngXZ8/0</headimgurl>
+			<headimgurl>http://wx.qlogo.cn/mmopen/AHe4aAgSdeY9kvYwU1YMYD52V8iaXwkqKZaKcwnxRZjXgkVkKHJ6Uic07DA1bHnDN5NlBibgbN3VYDgXE8H0uyMpIfozS5ngXZ8/0
+			</headimgurl>
 		</userinfo>
 	</wxuser>
-		<wxuser>
+	<wxuser>
 		<username>胡鹏</username>
-		<host>172.16.26.30,172.16.3.7</host>
+		<host>172.16.26.30,172.16.3.7,172.16.25.55</host>
 		<wxconfigs>
 			<wxconfig>
 				<descname>万江龙网络2</descname>
@@ -98,10 +100,11 @@
 			<province>湖北</province>
 			<city>武汉</city>
 			<country>中国</country>
-			<headimgurl>http://wx.qlogo.cn/mmopen/uZgYZ4C2E0vlt1iaRmEvYKrKBd9I1IagrPSn6M2ibkfI9KSxbSvmlMGIIzxJ7mA3Yd9Lboeu6tOL0Rv4PT3NjW2JrXHsfjkWrh/0</headimgurl>
+			<headimgurl>http://wx.qlogo.cn/mmopen/uZgYZ4C2E0vlt1iaRmEvYKrKBd9I1IagrPSn6M2ibkfI9KSxbSvmlMGIIzxJ7mA3Yd9Lboeu6tOL0Rv4PT3NjW2JrXHsfjkWrh/0
+			</headimgurl>
 		</userinfo>
 	</wxuser>
-	
+
 	<wxuser>
 		<username>陈煜</username>
 		<host>172.16.3.8,172.16.25.172</host>
@@ -123,7 +126,8 @@
 			<province>湖北</province>
 			<city>武汉</city>
 			<country>中国</country>
-			<headimgurl>http://wx.qlogo.cn/mmopen/JZ117vto8oic2TcjCfOgD3PlFeScvjRY48PhyDWVGqTBTlE0RN2UHTQcSIL6ep2QH6JWUTfR5WlicamQOicsq7NtrmsGdNiaogkC/0</headimgurl>
+			<headimgurl>http://wx.qlogo.cn/mmopen/JZ117vto8oic2TcjCfOgD3PlFeScvjRY48PhyDWVGqTBTlE0RN2UHTQcSIL6ep2QH6JWUTfR5WlicamQOicsq7NtrmsGdNiaogkC/0
+			</headimgurl>
 		</userinfo>
 	</wxuser>
 

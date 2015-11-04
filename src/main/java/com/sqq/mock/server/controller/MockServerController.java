@@ -20,8 +20,8 @@ public class MockServerController extends Controller {
 		String ip = MockServerUtil.getUserIp(this.getRequest());
 		WxDeveloper wxDeveloper = MockServerService.usermap.get(ip);
 		String appId = getPara("appid");
-		
-		Map<String, String> wxconfigMap =wxDeveloper.getWxConfigMap().get(ip);
+
+		Map<String, String> wxconfigMap = wxDeveloper.getWxConfigMap().get(ip);
 		Record result = new Record();
 		if (wxconfigMap == null || StringUtils.isBlank(appId)) {
 			renderJson(result);
@@ -41,16 +41,16 @@ public class MockServerController extends Controller {
 			redirect(getPara("redirect_uri") + "?code=abcdefg|state=wx");
 		}
 	}
-	
-	public void userInfo(){
+
+	public void userInfo() {
 		String ip = MockServerUtil.getUserIp(this.getRequest());
-		WxDeveloper developer=MockServerService.usermap.get(ip);
-		
-		if(developer==null){
+		WxDeveloper developer = MockServerService.usermap.get(ip);
+
+		if (developer == null) {
 			renderJson("");
-			return ;
+			return;
 		}
-		Map<String,String> userinfoMap=developer.getUserInfo();
+		Map<String, String> userinfoMap = developer.getUserInfo();
 		renderJson(userinfoMap);
 	}
 }
