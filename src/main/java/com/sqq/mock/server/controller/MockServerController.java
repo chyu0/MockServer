@@ -33,7 +33,7 @@ public class MockServerController extends Controller {
 			return;
 		}
 
-		String openId = wxconfig.get("openId");
+		String openId = wxconfig.get("openid");
 		result.set("openid", openId != null ? openId : "");
 		result.set("access_token", "efefs");
 		renderJson(result);

@@ -45,7 +45,7 @@ public class MockServerService {
 			}
 
 			// 支持一个用户多个IP地址<appid,openid>
-			Map<String, String> openidConfig = new HashMap<String, String>();
+			Map<String, String> wxUserConfig = new HashMap<String, String>();
 			// 用户映射
 			Map<String, String> userinfoMap = new HashMap<String, String>();
 
@@ -61,7 +61,6 @@ public class MockServerService {
 
 			String[] allHost = hosts.split(",");
 			for (String host : allHost) {
-				wxConfigMap.put(host.trim(), openidConfig);
 				map.put(host, developer);
 			}
 
@@ -73,10 +72,17 @@ public class MockServerService {
 			// 封装appid和openId
 			List<Element> allConfig = wxconfigs.elements("wxconfig");
 			for (Element wxconfig : allConfig) {
+				String descname=wxconfig.elementText("descname").trim();
 				String appid = wxconfig.element("appid").getText().trim();
 				String openid = wxconfig.element("openid").getText().trim();
-				if (StringUtils.isNotBlank(appid) && StringUtils.isNotBlank(openid)) {
-					openidConfig.put(appid, openid);
+				if(StringUtils.isNotBlank(appid)){
+					wxConfigMap.put(appid, wxUserConfig);
+				}else{
+					continue;
+				}
+				if (StringUtils.isNotBlank(openid)) {
+					wxUserConfig.put("descname", descname);
+					wxUserConfig.put("openid", openid);
 				}
 			}
 			developer.setWxConfigMap(wxConfigMap);
