@@ -21,14 +21,19 @@ public class MockServerController extends Controller {
 		WxDeveloper wxDeveloper = MockServerService.usermap.get(ip);
 		String appId = getPara("appid");
 
-		Map<String, String> wxconfigMap = wxDeveloper.getWxConfigMap().get(ip);
 		Record result = new Record();
-		if (wxconfigMap == null || StringUtils.isBlank(appId)) {
+		if (wxDeveloper == null || StringUtils.isBlank(appId)) {
 			renderJson(result);
 			return;
 		}
 
-		String openId = wxconfigMap.get(appId);
+		Map<String, String> wxconfig = wxDeveloper.getWxConfigMap().get(appId);
+		if (wxconfig == null) {
+			renderJson(result);
+			return;
+		}
+
+		String openId = wxconfig.get("openId");
 		result.set("openid", openId != null ? openId : "");
 		result.set("access_token", "efefs");
 		renderJson(result);
