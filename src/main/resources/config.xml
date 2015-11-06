@@ -26,7 +26,7 @@
 
 	<wxuser>
 		<username>罗正加</username>
-		<host>172.16.24.86,172.16.4.8</host>
+		<host>172.16.24.86,172.16.4.8,172.16.25.143</host>
 		<wxconfigs>
 			<wxconfig>
 				<descname>万江龙网络2</descname>
