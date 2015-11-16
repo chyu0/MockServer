@@ -5,34 +5,44 @@ import java.util.Map;
 
 public class WxDeveloper {
 
-	private String userName;
+    private String userName;
 
-	private Map<String, Map<String, String>> wxConfigMap;
+    private List<String> ips;
 
-	private Map<String, String> userInfo;
+    private Map<String, String> userInfo;
 
-	public String getUserName() {
-		return userName;
-	}
+    private Map<String, Map<String, String>> wxConfigMap;
 
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
+    public String getUserName() {
+        return userName;
+    }
 
-	public Map<String, Map<String, String>> getWxConfigMap() {
-		return wxConfigMap;
-	}
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
-	public void setWxConfigMap(Map<String, Map<String, String>> wxConfigMap) {
-		this.wxConfigMap = wxConfigMap;
-	}
+    public List<String> getIps() {
+        return ips;
+    }
 
-	public Map<String, String> getUserInfo() {
-		return userInfo;
-	}
+    public void setIps(List<String> ips) {
+        this.ips = ips;
+    }
 
-	public void setUserInfo(Map<String, String> userInfo) {
-		this.userInfo = userInfo;
-	}
+    public Map<String, Map<String, String>> getWxConfigMap() {
+        return wxConfigMap;
+    }
+
+    public void setWxConfigMap(Map<String, Map<String, String>> wxConfigMap) {
+        this.wxConfigMap = wxConfigMap;
+    }
+
+    public Map<String, String> getUserInfo() {
+        return userInfo;
+    }
+
+    public void setUserInfo(Map<String, String> userInfo) {
+        this.userInfo = userInfo;
+    }
 
 }
