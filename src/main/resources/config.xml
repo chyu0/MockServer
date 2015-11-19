@@ -56,7 +56,7 @@
 	</wxuser>
 	<wxuser>
 		<username>陈彬彬</username>
-		<host>172.16.4.5,172.16.24.76</host>
+		<host>172.16.4.5,172.16.24.76,172.16.25.162</host>
 		<wxconfigs>
 			<wxconfig>
 				<descname>万江龙网络2</descname>
