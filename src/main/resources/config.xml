@@ -68,6 +68,11 @@
 				<appid>wx7ea5ea5080ce5c1f</appid>
 				<openid>oHqfrwz6SOwiFPSkmmkwYNgey-T4</openid>
 			</wxconfig>
+			<wxconfig>
+				<descname>淮海第一城测试账号</descname>
+				<appid>wx425e8a34ad68ed94</appid>
+				<openid>ougCgwxfBXZiYPYi_t89OZq1wps4</openid>
+			</wxconfig>
 		</wxconfigs>
 		<userinfo>
 			<nickname>Arthur</nickname>
