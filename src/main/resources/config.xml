@@ -81,7 +81,7 @@
 	</wxuser>
 	<wxuser>
 		<username>胡鹏</username>
-		<host>172.16.26.30,172.16.3.7,172.16.25.55</host>
+		<host>172.16.26.30,172.16.3.7,172.16.25.55,172.16.24.159</host>
 		<wxconfigs>
 			<wxconfig>
 				<descname>万江龙网络2</descname>
