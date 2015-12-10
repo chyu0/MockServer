@@ -107,17 +107,17 @@
 
 	<wxuser>
 		<username>陈煜</username>
-		<host>172.16.3.8,172.16.25.172</host>
+		<host>172.16.3.8,172.16.25.172,192.16.25.196</host>
 		<wxconfigs>
 			<wxconfig>
 				<descname>万江龙网络2</descname>
 				<appid>wxac2386f873f97f70</appid>
-				<openid>oVDyijr2ePsX_QIWcszp6wUmVWj4j</openid>
+				<openid>oVDyijg6NT-LvCy5uoL7CxBzsCVg</openid>
 			</wxconfig>
 			<wxconfig>
 				<descname>万江龙测试账号</descname>
 				<appid>wx7ea5ea5080ce5c1f</appid>
-				<openid>oHqfrw9z6QxdCyg73P7fIap1uCl8</openid>
+				<openid>oHqfrwwfLM3Wy8OZiwVPlGlJANwc</openid>
 			</wxconfig>
 		</wxconfigs>
 		<userinfo>
@@ -131,4 +131,29 @@
 		</userinfo>
 	</wxuser>
 
+	<wxuser>
+		<username>佘青</username>
+		<host>172.16.26.166</host>
+		<wxconfigs>
+			<wxconfig>
+				<descname>万江龙网络2</descname>
+				<appid>wxac2386f873f97f70</appid>
+				<openid>oVDyijp-EOz0RV8dPHXBHMMWCOjU</openid>
+			</wxconfig>
+			<wxconfig>
+				<descname>万江龙测试账号</descname>
+				<appid>wx7ea5ea5080ce5c1f</appid>
+				<openid>oHqfrw2XZbRsCh1cLTcUiqvB98u0</openid>
+			</wxconfig>
+		</wxconfigs>
+		<userinfo>
+			<nickname>佘青</nickname>
+			<sex>1</sex>
+			<province>湖北</province>
+			<city>武汉</city>
+			<country>中国</country>
+			<headimgurl>http://wx.qlogo.cn/mmopen/Q3auHgzwzM6VDKJ6dYgwIQ9DmlkibmO2iaec4hmQNkxKxyjrsYMD48Yicrnlbnhd4QO5MicVEyuk2C3orhEibeGuicXg/0
+			</headimgurl>
+		</userinfo>
+	</wxuser>
 </wxusers>
