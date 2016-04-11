@@ -55,38 +55,9 @@
 		</userinfo>
 	</wxuser>
 	<wxuser>
-		<username>陈彬彬</username>
-		<host>172.16.4.5,172.16.24.76,172.16.25.162</host>
-		<wxconfigs>
-			<wxconfig>
-				<descname>万江龙网络2</descname>
-				<appid>wxac2386f873f97f70</appid>
-				<openid>oVDyijrcxgGh_Pw2Jdc2NdWPiOM0</openid>
-			</wxconfig>
-			<wxconfig>
-				<descname>万江龙测试账号</descname>
-				<appid>wx7ea5ea5080ce5c1f</appid>
-				<openid>oHqfrwz6SOwiFPSkmmkwYNgey-T4</openid>
-			</wxconfig>
-			<wxconfig>
-				<descname>淮海第一城测试账号</descname>
-				<appid>wx425e8a34ad68ed94</appid>
-				<openid>ougCgwxfBXZiYPYi_t89OZq1wps4</openid>
-			</wxconfig>
-		</wxconfigs>
-		<userinfo>
-			<nickname>Arthur</nickname>
-			<sex>1</sex>
-			<province>湖北</province>
-			<city>武汉</city>
-			<country>中国</country>
-			<headimgurl>http://wx.qlogo.cn/mmopen/AHe4aAgSdeY9kvYwU1YMYD52V8iaXwkqKZaKcwnxRZjXgkVkKHJ6Uic07DA1bHnDN5NlBibgbN3VYDgXE8H0uyMpIfozS5ngXZ8/0
-			</headimgurl>
-		</userinfo>
-	</wxuser>
-	<wxuser>
 		<username>胡鹏</username>
-		<host>172.16.26.30,172.16.3.7,172.16.25.55,172.16.24.159,172.16.3.7</host>
+		<host>172.16.26.30,172.16.3.7,172.16.25.55,172.16.24.159,172.16.3.7
+		</host>
 		<wxconfigs>
 			<wxconfig>
 				<descname>万江龙网络2</descname>
@@ -114,15 +85,14 @@
 			</headimgurl>
 		</userinfo>
 	</wxuser>
-
 	<wxuser>
-		<username>佘青</username>
-		<host>172.16.26.166</host>
+		<username>陈炼</username>
+		<host>172.16.24.128</host>
 		<wxconfigs>
 			<wxconfig>
 				<descname>万江龙网络2</descname>
 				<appid>wxac2386f873f97f70</appid>
-				<openid>oVDyijp-EOz0RV8dPHXBHMMWCOjU</openid>
+				<openid>oVDyijiSROK4wrAsPyXwzGk7GNAk</openid>
 			</wxconfig>
 			<wxconfig>
 				<descname>万江龙测试账号</descname>
@@ -131,12 +101,12 @@
 			</wxconfig>
 		</wxconfigs>
 		<userinfo>
-			<nickname>佘青</nickname>
+			<nickname>陈炼</nickname>
 			<sex>1</sex>
 			<province>湖北</province>
 			<city>武汉</city>
 			<country>中国</country>
-			<headimgurl>http://wx.qlogo.cn/mmopen/Q3auHgzwzM6VDKJ6dYgwIQ9DmlkibmO2iaec4hmQNkxKxyjrsYMD48Yicrnlbnhd4QO5MicVEyuk2C3orhEibeGuicXg/0
+			<headimgurl>http://wx.qlogo.cn/mmopen/uZgYZ4C2E0vlt1iaRmEvYKkadgan1kd4QKCzv1dWmYlZETyhpdXLqeL19HuK6ickY6v834dO0fEEka2Nl0micxjDciboibFNQ2zic8/0
 			</headimgurl>
 		</userinfo>
 	</wxuser>
