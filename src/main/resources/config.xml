@@ -110,4 +110,44 @@
 			</headimgurl>
 		</userinfo>
 	</wxuser>
+	<wxuser>
+		<username>叶青</username>
+		<host>172.16.2.25</host>
+		<wxconfigs>
+			<wxconfig>
+				<descname>万江龙网络2</descname>
+				<appid>wxac2386f873f97f70</appid>
+				<openid>oVDyijvZPG9j5E2sm04iKTcLYzbU</openid>
+			</wxconfig>
+		</wxconfigs>
+		<userinfo>
+			<nickname>叶青</nickname>
+			<sex>1</sex>
+			<province>湖北</province>
+			<city>武汉</city>
+			<country>中国</country>
+			<headimgurl>http://wx.qlogo.cn/mmopen/uZgYZ4C2E0vlt1iaRmEvYKkadgan1kd4QKCzv1dWmYlZETyhpdXLqeL19HuK6ickY6v834dO0fEEka2Nl0micxjDciboibFNQ2zic8/0
+			</headimgurl>
+		</userinfo>
+	</wxuser>
+	<wxuser>
+		<username>葛晶</username>
+		<host>172.16.25.195</host>
+		<wxconfigs>
+			<wxconfig>
+				<descname>万江龙网络2</descname>
+				<appid>wxac2386f873f97f70</appid>
+				<openid>oVDyijor9IBis20gdQ0p2-XiRq0k</openid>
+			</wxconfig>
+		</wxconfigs>
+		<userinfo>
+			<nickname>葛晶</nickname>
+			<sex>1</sex>
+			<province>湖北</province>
+			<city>武汉</city>
+			<country>中国</country>
+			<headimgurl>http://wx.qlogo.cn/mmopen/uZgYZ4C2E0vlt1iaRmEvYKkadgan1kd4QKCzv1dWmYlZETyhpdXLqeL19HuK6ickY6v834dO0fEEka2Nl0micxjDciboibFNQ2zic8/0
+			</headimgurl>
+		</userinfo>
+	</wxuser>
 </wxusers>
