@@ -112,7 +112,7 @@
 	</wxuser>
 	<wxuser>
 		<username>叶青</username>
-		<host>172.16.2.25</host>
+		<host>172.16.2.25,172.16.1.19</host>
 		<wxconfigs>
 			<wxconfig>
 				<descname>万江龙网络2</descname>
@@ -132,7 +132,7 @@
 	</wxuser>
 	<wxuser>
 		<username>葛晶</username>
-		<host>172.16.25.195</host>
+		<host>172.16.25.195,172.16.1.20</host>
 		<wxconfigs>
 			<wxconfig>
 				<descname>万江龙网络2</descname>
