@@ -23,7 +23,6 @@
 			<headimgurl></headimgurl>
 		</userinfo>
 	</wxuser>
-
 	<wxuser>
 		<username>罗正加</username>
 		<host>172.16.24.86,172.16.4.8,172.16.25.143</host>
@@ -54,37 +53,7 @@
 			</headimgurl>
 		</userinfo>
 	</wxuser>
-	<wxuser>
-		<username>胡鹏</username>
-		<host>172.16.26.30,172.16.3.7,172.16.25.55,172.16.24.159,172.16.3.7
-		</host>
-		<wxconfigs>
-			<wxconfig>
-				<descname>万江龙网络2</descname>
-				<appid>wxac2386f873f97f70</appid>
-				<openid>oVDyijhRFUY9H_itAaGcWo7LEsSs</openid>
-			</wxconfig>
-			<wxconfig>
-				<descname>万江龙测试账号</descname>
-				<appid>wx7ea5ea5080ce5c1f</appid>
-				<openid>oHqfrw6dB2-Jc0lSeZKCxHX4uWtI</openid>
-			</wxconfig>
-			<wxconfig>
-				<descname>淮海第一城测试账号</descname>
-				<appid>wx425e8a34ad68ed94</appid>
-				<openid>ougCgw6R9PWkC2RRNSihi2FXOKJ0</openid>
-			</wxconfig>
-		</wxconfigs>
-		<userinfo>
-			<nickname>return</nickname>
-			<sex>1</sex>
-			<province>湖北</province>
-			<city>武汉</city>
-			<country>中国</country>
-			<headimgurl>http://wx.qlogo.cn/mmopen/uZgYZ4C2E0vlt1iaRmEvYKrKBd9I1IagrPSn6M2ibkfI9KSxbSvmlMGIIzxJ7mA3Yd9Lboeu6tOL0Rv4PT3NjW2JrXHsfjkWrh/0
-			</headimgurl>
-		</userinfo>
-	</wxuser>
+
 	<wxuser>
 		<username>陈炼</username>
 		<host>172.16.24.128</host>
@@ -150,4 +119,26 @@
 			</headimgurl>
 		</userinfo>
 	</wxuser>
+	
+		<wxuser>
+		<username>伍伟</username>
+		<host>172.16.24.106</host>
+		<wxconfigs>
+			<wxconfig>
+				<descname>万江龙网络2</descname>
+				<appid>wxac2386f873f97f70</appid>
+				<openid>oVDyijiaFePS1n4Ru46TJS2pNGAE</openid>
+			</wxconfig>
+		</wxconfigs>
+		<userinfo>
+			<nickname>伍伟</nickname>
+			<sex>1</sex>
+			<province>湖北</province>
+			<city>武汉</city>
+			<country>中国</country>
+			<headimgurl>http://wx.qlogo.cn/mmopen/uZgYZ4C2E0vlt1iaRmEvYKkadgan1kd4QKCzv1dWmYlZETyhpdXLqeL19HuK6ickY6v834dO0fEEka2Nl0micxjDciboibFNQ2zic8/0
+			</headimgurl>
+		</userinfo>
+	</wxuser>
+	
 </wxusers>
