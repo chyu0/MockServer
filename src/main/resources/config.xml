@@ -120,7 +120,7 @@
 		</userinfo>
 	</wxuser>
 	
-		<wxuser>
+	<wxuser>
 		<username>伍伟</username>
 		<host>172.16.24.106</host>
 		<wxconfigs>
@@ -138,6 +138,27 @@
 		</wxconfigs>
 		<userinfo>
 			<nickname>伍伟</nickname>
+			<sex>1</sex>
+			<province>湖北</province>
+			<city>武汉</city>
+			<country>中国</country>
+			<headimgurl>http://wx.qlogo.cn/mmopen/uZgYZ4C2E0vlt1iaRmEvYKkadgan1kd4QKCzv1dWmYlZETyhpdXLqeL19HuK6ickY6v834dO0fEEka2Nl0micxjDciboibFNQ2zic8/0
+			</headimgurl>
+		</userinfo>
+	</wxuser>
+	
+	<wxuser>
+		<username>徐凌云</username>
+		<host>172.16.26.78</host>
+		<wxconfigs>
+			<wxconfig>
+				<descname>万江龙网络2</descname>
+				<appid>wxac2386f873f97f70</appid>
+				<openid>oVDyijpIuWebAIZEYKHk0eDBUM94</openid>
+			</wxconfig>
+		</wxconfigs>
+		<userinfo>
+			<nickname>徐凌云</nickname>
 			<sex>1</sex>
 			<province>湖北</province>
 			<city>武汉</city>
