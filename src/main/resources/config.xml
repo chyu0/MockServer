@@ -129,6 +129,12 @@
 				<appid>wxac2386f873f97f70</appid>
 				<openid>oVDyijiaFePS1n4Ru46TJS2pNGAE</openid>
 			</wxconfig>
+			<wxconfig>
+				<descname>万江龙网络2-测试账号</descname>
+				<appid>wx72baeba1d1846561</appid>
+				<openid>odD_Os5T3ZYYyND98DLiXNG8Vzco</openid>
+			</wxconfig>
+			
 		</wxconfigs>
 		<userinfo>
 			<nickname>伍伟</nickname>
