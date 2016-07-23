@@ -59,7 +59,7 @@ public class MockServerController extends Controller {
 		renderJson(userinfoMap);
 	}
 
-	public void auth2_openId() {
+	public void auth2openId() {
 		String ip = MockServerUtil.getUserIp(this.getRequest());
 		WxDeveloper wxDeveloper = MockServerService.usermap.get(ip);
 		String appId = "wx2081641205048811";
