@@ -58,4 +58,26 @@ public class MockServerController extends Controller {
 		Map<String, String> userinfoMap = developer.getUserInfo();
 		renderJson(userinfoMap);
 	}
+
+	public void auth2_openId() {
+		String ip = MockServerUtil.getUserIp(this.getRequest());
+		WxDeveloper wxDeveloper = MockServerService.usermap.get(ip);
+		String appId = "wx2081641205048811";
+
+		Record result = new Record();
+		if (wxDeveloper == null || StringUtils.isBlank(appId)) {
+			renderJson(result);
+			return;
+		}
+
+		Map<String, String> wxconfig = wxDeveloper.getWxConfigMap().get(appId);
+		if (wxconfig == null) {
+			renderJson(result);
+			return;
+		}
+		String openId = wxconfig.get("openid");
+		String sourceUrl = getPara("sourceUrl");
+		sourceUrl = sourceUrl + (sourceUrl.contains("?") ? "&" : "?") + "openId=" + openId;
+		redirect(sourceUrl);
+	}
 }
